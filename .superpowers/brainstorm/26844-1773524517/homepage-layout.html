@@ -1,0 +1,83 @@
+<h2>Homepage Layout</h2>
+<p class="subtitle">Which hero section style feels right for Sync Wave Analytics?</p>
+
+<div class="cards">
+  <div class="card" data-choice="hero-a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d1b2a 100%); padding: 24px; border-radius: 8px; color: #e0e0e0; font-family: system-ui;">
+        <!-- Nav -->
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(100,140,255,0.15); margin-bottom: 32px;">
+          <span style="font-weight: 700; font-size: 14px; color: #7b9fff;">SYNC WAVE</span>
+          <div style="display: flex; gap: 16px; font-size: 11px; color: #8899bb;">
+            <span>Services</span><span>About</span><span>Careers</span><span>Contact</span>
+          </div>
+        </div>
+        <!-- Hero -->
+        <div style="text-align: center; padding: 40px 0;">
+          <div style="font-size: 10px; letter-spacing: 3px; color: #7b9fff; margin-bottom: 12px;">DATA ENGINEERING &bull; AI &bull; ANALYTICS</div>
+          <div style="font-size: 22px; font-weight: 700; line-height: 1.3; margin-bottom: 12px;">We turn your data into<br/><span style="background: linear-gradient(90deg, #7b9fff, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">intelligent systems</span></div>
+          <div style="font-size: 11px; color: #8899bb; margin-bottom: 20px; max-width: 280px; margin-left: auto; margin-right: auto;">End-to-end data solutions from pipeline to production. AI-powered analytics that drive real business outcomes.</div>
+          <div style="display: flex; gap: 8px; justify-content: center;">
+            <span style="background: #7b9fff; color: #0a0a1a; padding: 6px 16px; border-radius: 4px; font-size: 11px; font-weight: 600;">Get in Touch</span>
+            <span style="border: 1px solid #7b9fff; color: #7b9fff; padding: 6px 16px; border-radius: 4px; font-size: 11px;">Our Services</span>
+          </div>
+        </div>
+        <!-- Animated wave hint -->
+        <div style="text-align: center; margin-top: 12px;">
+          <svg width="200" height="30" viewBox="0 0 200 30" style="opacity: 0.3;">
+            <path d="M0,15 Q25,5 50,15 Q75,25 100,15 Q125,5 150,15 Q175,25 200,15" stroke="#7b9fff" fill="none" stroke-width="1.5"/>
+            <path d="M0,15 Q25,8 50,15 Q75,22 100,15 Q125,8 150,15 Q175,22 200,15" stroke="#a78bfa" fill="none" stroke-width="1" opacity="0.5" transform="translate(0,3)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: Centered Hero with Wave Motif</h3>
+      <p>Centered headline with gradient text, tagline above, dual CTAs. Subtle wave SVG animation at bottom ties to the "Sync Wave" brand. Clean and authoritative.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="hero-b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0d1b2a 100%); padding: 24px; border-radius: 8px; color: #e0e0e0; font-family: system-ui;">
+        <!-- Nav -->
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(100,140,255,0.15); margin-bottom: 32px;">
+          <span style="font-weight: 700; font-size: 14px; color: #7b9fff;">SYNC WAVE</span>
+          <div style="display: flex; gap: 16px; font-size: 11px; color: #8899bb;">
+            <span>Services</span><span>About</span><span>Careers</span><span>Contact</span>
+          </div>
+        </div>
+        <!-- Hero Split -->
+        <div style="display: flex; gap: 20px; padding: 24px 0; align-items: center;">
+          <div style="flex: 1;">
+            <div style="font-size: 10px; letter-spacing: 3px; color: #7b9fff; margin-bottom: 8px;">AI-POWERED ANALYTICS</div>
+            <div style="font-size: 20px; font-weight: 700; line-height: 1.3; margin-bottom: 10px;">From raw data<br/>to real impact</div>
+            <div style="font-size: 10px; color: #8899bb; margin-bottom: 16px;">We build the data infrastructure, ML pipelines, and applications that transform how businesses operate.</div>
+            <span style="background: #7b9fff; color: #0a0a1a; padding: 6px 16px; border-radius: 4px; font-size: 11px; font-weight: 600;">Get in Touch</span>
+          </div>
+          <div style="flex: 1; background: rgba(100,140,255,0.08); border: 1px solid rgba(100,140,255,0.15); border-radius: 8px; padding: 16px; font-size: 9px;">
+            <div style="color: #7b9fff; margin-bottom: 8px; font-weight: 600;">&#9632; Live Pipeline</div>
+            <div style="display: flex; gap: 4px; margin-bottom: 6px;">
+              <span style="background: rgba(100,140,255,0.2); padding: 3px 8px; border-radius: 3px; color: #8899bb;">Ingest</span>
+              <span style="color: #7b9fff;">&rarr;</span>
+              <span style="background: rgba(100,140,255,0.2); padding: 3px 8px; border-radius: 3px; color: #8899bb;">Transform</span>
+              <span style="color: #7b9fff;">&rarr;</span>
+              <span style="background: rgba(100,140,255,0.2); padding: 3px 8px; border-radius: 3px; color: #8899bb;">Model</span>
+              <span style="color: #7b9fff;">&rarr;</span>
+              <span style="background: rgba(167,139,250,0.2); padding: 3px 8px; border-radius: 3px; color: #a78bfa;">Deploy</span>
+            </div>
+            <div style="display: flex; gap: 12px; margin-top: 10px;">
+              <div><span style="color: #4ade80; font-size: 14px; font-weight: 700;">99.9%</span><br/><span style="color: #667788;">uptime</span></div>
+              <div><span style="color: #7b9fff; font-size: 14px; font-weight: 700;">2.4M</span><br/><span style="color: #667788;">events/day</span></div>
+              <div><span style="color: #a78bfa; font-size: 14px; font-weight: 700;">< 50ms</span><br/><span style="color: #667788;">latency</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: Split Hero with Data Pipeline Visual</h3>
+      <p>Left-aligned copy with right-side interactive data pipeline visualization showing real metrics. Shows technical depth immediately. More dynamic and data-forward.</p>
+    </div>
+  </div>
+</div>
