@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router"
 import { Github, Linkedin } from "lucide-react"
 import { Logo } from "./logo"
 import { Separator } from "@/components/ui/separator"
@@ -34,9 +35,17 @@ export function Footer() {
           <p className="text-sm text-slate-500">
             Data engineering, AI, and analytics — built for production.
           </p>
-          <p className="text-sm text-slate-400">
-            &copy; 2025 Sync Wave Analytics
-          </p>
+          <div className="flex gap-4">
+            <Link
+              to="/brand"
+              className="text-sm text-slate-400 transition-colors hover:text-sky-700"
+            >
+              Brand
+            </Link>
+            <p className="text-sm text-slate-400">
+              &copy; 2025 Sync Wave Analytics
+            </p>
+          </div>
         </div>
       </div>
     </footer>
