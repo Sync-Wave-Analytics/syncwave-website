@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <defs>
+    <linearGradient id="wave-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0, 4)">
+    <rect width="40" height="40" rx="7.5" fill="#f0f9ff"/>
+    <path d="M5 22.5c3.75-5 7.5-5 11.25 0s7.5 5 11.25 0 7.5-5 11.25 0" stroke="url(#wave-grad)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M5 30c3.75-5 7.5-5 11.25 0s7.5 5 11.25 0 7.5-5 11.25 0" stroke="url(#wave-grad)" stroke-width="1.7" stroke-linecap="round" opacity="0.5"/>
+  </g>
+  <text x="52" y="23" font-family="'Noto Sans', sans-serif" font-size="18" font-weight="700" letter-spacing="0.05em" fill="url(#text-grad)">SYNC WAVE</text>
+  <text x="52" y="38" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="500" letter-spacing="0.3em" fill="#94a3b8">ANALYTICS</text>
+</svg>
