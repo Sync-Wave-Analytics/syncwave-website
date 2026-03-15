@@ -1,5 +1,5 @@
+import { readFileSync } from "node:fs"
 import sharp from "sharp"
-import { readFileSync } from "fs"
 
 const svg = readFileSync("public/brand/logo-icon.svg")
 
