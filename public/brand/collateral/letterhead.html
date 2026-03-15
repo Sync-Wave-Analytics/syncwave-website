@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @page { size: letter; margin: 0; }
+    body { font-family: 'Noto Sans', sans-serif; width: 8.5in; min-height: 11in; margin: 0 auto; background: white; display: flex; flex-direction: column; }
+    .header { padding: 48px 60px 20px; display: flex; justify-content: space-between; align-items: flex-start; }
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .header-left .title { font-size: 16px; font-weight: 700; letter-spacing: 0.05em; background: linear-gradient(to right, #0369a1, #0891b2, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .header-left .subtitle { font-size: 7px; font-weight: 500; letter-spacing: 0.3em; color: #94a3b8; }
+    .header-right { text-align: right; font-size: 11px; color: #64748b; line-height: 1.7; }
+    .accent-line { height: 2px; margin: 0 60px; background: linear-gradient(to right, #0369a1, #0891b2, #14b8a6); }
+    .body { flex: 1; padding: 48px 60px; font-size: 14px; color: #1e293b; line-height: 1.8; }
+    .footer { padding: 20px 60px 40px; text-align: center; position: relative; }
+    .footer .wave-line { margin-bottom: 12px; }
+    .footer .wave-line path { stroke: #bae6fd; fill: none; stroke-linecap: round; }
+    .footer .url { font-size: 11px; color: #94a3b8; letter-spacing: 0.05em; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <svg width="36" height="36" viewBox="0 0 128 128"><defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0369a1"/><stop offset="50%" stop-color="#0891b2"/><stop offset="100%" stop-color="#14b8a6"/></linearGradient></defs><rect width="128" height="128" rx="24" fill="#f0f9ff"/><path d="M16 72c12-16 24-16 32 0s20 16 32 0 20-16 32 0" stroke="url(#wg)" stroke-width="12" stroke-linecap="round" fill="none"/><path d="M16 96c12-16 24-16 32 0s20 16 32 0 20-16 32 0" stroke="url(#wg)" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.5"/></svg>
+      <div>
+        <div class="title">SYNC WAVE</div>
+        <div class="subtitle">ANALYTICS</div>
+      </div>
+    </div>
+    <div class="header-right">
+      nestelm@gmail.com<br>
+      syncwaveanalytics.com
+    </div>
+  </div>
+  <div class="accent-line"></div>
+  <div class="body">
+    <p style="margin-bottom: 24px;">[Date]</p>
+    <p style="margin-bottom: 24px;">[Recipient Name]<br>[Company]<br>[Address]</p>
+    <p style="margin-bottom: 24px;">Dear [Name],</p>
+    <p style="margin-bottom: 24px;">[Letter body content goes here. This template is designed for proposals, invoices, and formal correspondence.]</p>
+    <p>Best regards,<br>Michael Nestel<br>Founder, Sync Wave Analytics</p>
+  </div>
+  <div class="footer">
+    <svg class="wave-line" width="200" height="16" viewBox="0 0 200 16"><path d="M0 8c15-6 30-6 45 0s30 6 45 0 30-6 45 0 30 6 45 0 30-6 20 0" stroke-width="1.5"/></svg>
+    <div class="url">syncwaveanalytics.com</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans', sans-serif; background: #f8fafc; display: flex; gap: 24px; padding: 24px; align-items: center; justify-content: center; min-height: 100vh; }
+    .card { width: 700px; height: 400px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+    .front { background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
+    .front .icon { margin-bottom: 12px; }
+    .front .title { font-size: 28px; font-weight: 700; letter-spacing: 0.05em; background: linear-gradient(to right, #0369a1, #0891b2, #14b8a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .front .subtitle { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; color: #94a3b8; margin-top: 2px; }
+    .front .accent { position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(to right, #0369a1, #0891b2, #14b8a6); }
+    .back { background: #ffffff; display: flex; flex-direction: column; justify-content: center; padding: 48px; position: relative; overflow: hidden; }
+    .back .waves { position: absolute; right: -40px; bottom: -20px; opacity: 0.06; }
+    .back .info { position: relative; z-index: 1; }
+    .back .name { font-size: 22px; font-weight: 700; color: #1e293b; }
+    .back .role { font-size: 14px; color: #0891b2; font-weight: 500; margin-top: 2px; }
+    .back .divider { width: 48px; height: 2px; background: linear-gradient(to right, #0369a1, #14b8a6); margin: 16px 0; }
+    .back .detail { font-size: 13px; color: #64748b; line-height: 1.8; }
+    .back .qr { position: absolute; right: 48px; bottom: 48px; width: 80px; height: 80px; border: 2px dashed #bae6fd; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 10px; }
+    h3 { font-size: 12px; font-weight: 600; color: #94a3b8; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>Front</h3>
+    <div class="card front">
+      <svg class="icon" width="64" height="64" viewBox="0 0 128 128"><defs><linearGradient id="wg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0369a1"/><stop offset="50%" stop-color="#0891b2"/><stop offset="100%" stop-color="#14b8a6"/></linearGradient></defs><rect width="128" height="128" rx="24" fill="#f0f9ff"/><path d="M16 72c12-16 24-16 32 0s20 16 32 0 20-16 32 0" stroke="url(#wg)" stroke-width="12" stroke-linecap="round" fill="none"/><path d="M16 96c12-16 24-16 32 0s20 16 32 0 20-16 32 0" stroke="url(#wg)" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.5"/></svg>
+      <div class="title">SYNC WAVE</div>
+      <div class="subtitle">ANALYTICS</div>
+      <div class="accent"></div>
+    </div>
+  </div>
+  <div>
+    <h3>Back</h3>
+    <div class="card back">
+      <svg class="waves" width="200" height="200" viewBox="0 0 128 128"><defs><linearGradient id="wg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0369a1"/><stop offset="50%" stop-color="#0891b2"/><stop offset="100%" stop-color="#14b8a6"/></linearGradient></defs><path d="M16 72c12-16 24-16 32 0s20 16 32 0 20-16 32 0" stroke="url(#wg2)" stroke-width="12" stroke-linecap="round" fill="none"/><path d="M16 96c12-16 24-16 32 0s20 16 32 0 20-16 32 0" stroke="url(#wg2)" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.5"/></svg>
+      <div class="info">
+        <div class="name">Michael Nestel</div>
+        <div class="role">Founder</div>
+        <div class="divider"></div>
+        <div class="detail">
+          nestelm@gmail.com<br>
+          syncwaveanalytics.com<br>
+          linkedin.com/company/sync-wave-analytics
+        </div>
+      </div>
+      <div class="qr">QR Code</div>
+    </div>
+  </div>
+</body>
+</html>
