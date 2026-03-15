@@ -43,7 +43,7 @@ export function Footer() {
               Brand
             </Link>
             <p className="text-sm text-slate-400">
-              &copy; 2025 Sync Wave Analytics
+              &copy; {new Date().getFullYear()} Sync Wave Analytics
             </p>
           </div>
         </div>
