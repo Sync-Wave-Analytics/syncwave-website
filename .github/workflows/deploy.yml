@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "*.md"
+      - "LICENSE"
+      - ".github/CODEOWNERS"
+      - ".github/pull_request_template.md"
+      - ".github/dependabot.yml"
   workflow_dispatch:
 
 permissions:
