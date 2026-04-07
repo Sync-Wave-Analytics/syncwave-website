@@ -14,6 +14,13 @@ const config = defineConfig({
     tailwindcss(),
     viteReact(),
   ],
+  test: {
+    environment: "jsdom",
+    include: ["src/**/*.test.{ts,tsx}"],
+    globals: true,
+    css: false,
+    setupFiles: ["./src/test-setup.ts"],
+  },
 })
 
 export default config
