@@ -8,34 +8,134 @@ import { Separator } from "@/components/ui/separator"
 export const Route = createFileRoute("/brand")({ component: BrandPage })
 
 const brandColors = [
-  { name: "Sky 700", hex: "#0369a1", rgb: "3, 105, 161", tailwind: "sky-700", role: "Primary" },
-  { name: "Cyan 600", hex: "#0891b2", rgb: "8, 145, 178", tailwind: "cyan-600", role: "Accent" },
-  { name: "Teal 500", hex: "#14b8a6", rgb: "20, 184, 166", tailwind: "teal-500", role: "Accent" },
-  { name: "Sky 50", hex: "#f0f9ff", rgb: "240, 249, 255", tailwind: "sky-50", role: "Background (light)" },
-  { name: "Amber 50", hex: "#fefce8", rgb: "254, 252, 232", tailwind: "amber-50", role: "Background (warm)" },
-  { name: "Slate 800", hex: "#1e293b", rgb: "30, 41, 59", tailwind: "slate-800", role: "Text" },
-  { name: "Slate 500", hex: "#64748b", rgb: "100, 116, 139", tailwind: "slate-500", role: "Muted text" },
-  { name: "Sky 200", hex: "#bae6fd", rgb: "186, 230, 253", tailwind: "sky-200", role: "Border" },
+  {
+    name: "Sky 700",
+    hex: "#0369a1",
+    rgb: "3, 105, 161",
+    tailwind: "sky-700",
+    role: "Primary",
+  },
+  {
+    name: "Cyan 600",
+    hex: "#0891b2",
+    rgb: "8, 145, 178",
+    tailwind: "cyan-600",
+    role: "Accent",
+  },
+  {
+    name: "Teal 500",
+    hex: "#14b8a6",
+    rgb: "20, 184, 166",
+    tailwind: "teal-500",
+    role: "Accent",
+  },
+  {
+    name: "Sky 50",
+    hex: "#f0f9ff",
+    rgb: "240, 249, 255",
+    tailwind: "sky-50",
+    role: "Background (light)",
+  },
+  {
+    name: "Amber 50",
+    hex: "#fefce8",
+    rgb: "254, 252, 232",
+    tailwind: "amber-50",
+    role: "Background (warm)",
+  },
+  {
+    name: "Slate 800",
+    hex: "#1e293b",
+    rgb: "30, 41, 59",
+    tailwind: "slate-800",
+    role: "Text",
+  },
+  {
+    name: "Slate 500",
+    hex: "#64748b",
+    rgb: "100, 116, 139",
+    tailwind: "slate-500",
+    role: "Muted text",
+  },
+  {
+    name: "Sky 200",
+    hex: "#bae6fd",
+    rgb: "186, 230, 253",
+    tailwind: "sky-200",
+    role: "Border",
+  },
 ]
 
 const logoAssets = [
-  { name: "Icon Mark", file: "logo-icon.svg", desc: "Standalone wave icon — light background" },
-  { name: "Icon (Transparent)", file: "logo-icon-transparent.svg", desc: "Wave icon — no background" },
-  { name: "Icon (Dark)", file: "logo-icon-dark.svg", desc: "Wave icon — dark background" },
-  { name: "Horizontal", file: "logo-horizontal.svg", desc: "Icon + wordmark side by side" },
-  { name: "Horizontal (Dark)", file: "logo-horizontal-dark.svg", desc: "Horizontal lockup for dark backgrounds" },
+  {
+    name: "Icon Mark",
+    file: "logo-icon.svg",
+    desc: "Standalone wave icon — light background",
+  },
+  {
+    name: "Icon (Transparent)",
+    file: "logo-icon-transparent.svg",
+    desc: "Wave icon — no background",
+  },
+  {
+    name: "Icon (Dark)",
+    file: "logo-icon-dark.svg",
+    desc: "Wave icon — dark background",
+  },
+  {
+    name: "Horizontal",
+    file: "logo-horizontal.svg",
+    desc: "Icon + wordmark side by side",
+  },
+  {
+    name: "Horizontal (Dark)",
+    file: "logo-horizontal-dark.svg",
+    desc: "Horizontal lockup for dark backgrounds",
+  },
   { name: "Stacked", file: "logo-stacked.svg", desc: "Icon above wordmark" },
-  { name: "Stacked (Dark)", file: "logo-stacked-dark.svg", desc: "Stacked lockup for dark backgrounds" },
+  {
+    name: "Stacked (Dark)",
+    file: "logo-stacked-dark.svg",
+    desc: "Stacked lockup for dark backgrounds",
+  },
 ]
 
 const typeSamples = [
-  { label: "H1", className: "text-4xl font-bold tracking-tight text-slate-800 md:text-5xl", text: "Heading One" },
-  { label: "H2", className: "text-3xl font-bold tracking-tight text-slate-800", text: "Heading Two" },
-  { label: "H3", className: "text-xl font-semibold text-slate-800", text: "Heading Three" },
-  { label: "H4", className: "text-lg font-semibold text-slate-800", text: "Heading Four" },
-  { label: "Body", className: "text-base text-slate-500 leading-relaxed", text: "Body text for paragraphs and general content. Noto Sans Variable at regular weight." },
-  { label: "Caption", className: "text-sm text-slate-400", text: "Caption or helper text at a smaller size." },
-  { label: "Label", className: "text-xs font-semibold uppercase tracking-widest text-cyan-600", text: "Section Label" },
+  {
+    label: "H1",
+    className: "text-4xl font-bold tracking-tight text-slate-800 md:text-5xl",
+    text: "Heading One",
+  },
+  {
+    label: "H2",
+    className: "text-3xl font-bold tracking-tight text-slate-800",
+    text: "Heading Two",
+  },
+  {
+    label: "H3",
+    className: "text-xl font-semibold text-slate-800",
+    text: "Heading Three",
+  },
+  {
+    label: "H4",
+    className: "text-lg font-semibold text-slate-800",
+    text: "Heading Four",
+  },
+  {
+    label: "Body",
+    className: "text-base text-slate-500 leading-relaxed",
+    text: "Body text for paragraphs and general content. Noto Sans Variable at regular weight.",
+  },
+  {
+    label: "Caption",
+    className: "text-sm text-slate-400",
+    text: "Caption or helper text at a smaller size.",
+  },
+  {
+    label: "Label",
+    className: "text-xs font-semibold uppercase tracking-widest text-cyan-600",
+    text: "Section Label",
+  },
 ]
 
 function BrandPage() {
@@ -47,7 +147,7 @@ function BrandPage() {
       <section className="bg-gradient-to-br from-amber-50/50 via-sky-50 to-cyan-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <AnimatedSection>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-600">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-cyan-600 uppercase">
               Brand Guidelines
             </p>
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">
@@ -100,14 +200,24 @@ function BrandPage() {
                       {asset.name}
                     </CardTitle>
                     <p className="mb-3 text-sm text-slate-500">{asset.desc}</p>
-                    <a
-                      href={`/brand/${asset.file}`}
-                      download
-                      className="inline-flex items-center gap-1.5 text-sm font-medium text-sky-700 hover:text-sky-800"
-                    >
-                      <Download className="size-3.5" />
-                      Download SVG
-                    </a>
+                    <div className="flex gap-4">
+                      <a
+                        href={`/brand/${asset.file}`}
+                        download
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-sky-700 hover:text-sky-800"
+                      >
+                        <Download className="size-3.5" />
+                        SVG
+                      </a>
+                      <a
+                        href={`/brand/${asset.file.replace(".svg", ".png")}`}
+                        download
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-sky-700 hover:text-sky-800"
+                      >
+                        <Download className="size-3.5" />
+                        PNG
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               </AnimatedSection>
