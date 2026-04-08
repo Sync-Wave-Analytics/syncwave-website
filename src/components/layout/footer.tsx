@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router"
-import { Github, Linkedin } from "lucide-react"
 import { Logo } from "./logo"
+import { GithubIcon, LinkedinIcon } from "@/components/icons"
 import { Separator } from "@/components/ui/separator"
 
 export function Footer() {
@@ -18,7 +18,7 @@ export function Footer() {
               className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-sky-50 hover:text-sky-700"
               aria-label="GitHub"
             >
-              <Github className="size-5" />
+              <GithubIcon className="size-5" />
             </a>
             <a
               href="https://www.linkedin.com/company/sync-wave-analytics"
@@ -27,7 +27,7 @@ export function Footer() {
               className="rounded-lg p-2 text-slate-400 transition-colors hover:bg-sky-50 hover:text-sky-700"
               aria-label="LinkedIn"
             >
-              <Linkedin className="size-5" />
+              <LinkedinIcon className="size-5" />
             </a>
           </div>
         </div>
