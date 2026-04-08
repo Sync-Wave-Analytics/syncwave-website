@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
+import { GithubIcon, LinkedinIcon } from "@/components/icons"
 import { usePageTitle } from "@/hooks/use-page-title"
 import { AnimatedSection } from "@/components/ui/animated-section"
 
@@ -12,7 +13,7 @@ function ContactPage() {
     <section className="flex flex-1 items-center bg-gradient-to-br from-amber-50/50 via-sky-50 to-cyan-50 py-24">
       <div className="mx-auto max-w-2xl px-6 text-center">
         <AnimatedSection>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-600">
+          <p className="mb-4 text-xs font-semibold tracking-widest text-cyan-600 uppercase">
             Get in Touch
           </p>
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">
@@ -41,7 +42,7 @@ function ContactPage() {
               rel="noopener noreferrer"
               className="rounded-lg p-2.5 text-slate-400 transition-colors hover:bg-sky-50 hover:text-sky-700"
             >
-              <Github className="size-6" />
+              <GithubIcon className="size-6" />
             </a>
             <a
               href="https://www.linkedin.com/company/sync-wave-analytics"
@@ -49,7 +50,7 @@ function ContactPage() {
               rel="noopener noreferrer"
               className="rounded-lg p-2.5 text-slate-400 transition-colors hover:bg-sky-50 hover:text-sky-700"
             >
-              <Linkedin className="size-6" />
+              <LinkedinIcon className="size-6" />
             </a>
           </div>
         </AnimatedSection>
