@@ -1,5 +1,10 @@
 import { useEffect } from "react"
-import { Outlet, ScrollRestoration, createRootRoute, useLocation } from "@tanstack/react-router"
+import {
+  Outlet,
+  ScrollRestoration,
+  createRootRoute,
+  useLocation,
+} from "@tanstack/react-router"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 

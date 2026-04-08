@@ -14,7 +14,7 @@ function ServicesPage() {
       <section className="bg-gradient-to-br from-amber-50/50 via-sky-50 to-cyan-50 py-20">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <AnimatedSection>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-600">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-cyan-600 uppercase">
               What We Do
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">

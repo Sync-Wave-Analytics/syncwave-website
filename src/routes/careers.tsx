@@ -2,7 +2,12 @@ import { createFileRoute } from "@tanstack/react-router"
 import { Briefcase, MapPin } from "lucide-react"
 import { usePageTitle } from "@/hooks/use-page-title"
 import { AnimatedSection } from "@/components/ui/animated-section"
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { jobs } from "@/data/jobs"
 
 export const Route = createFileRoute("/careers")({ component: CareersPage })
@@ -16,7 +21,7 @@ function CareersPage() {
       <section className="bg-gradient-to-br from-amber-50/50 via-sky-50 to-cyan-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <AnimatedSection>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-600">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-cyan-600 uppercase">
               Careers
             </p>
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">
@@ -79,8 +84,8 @@ function CareersPage() {
                   </CardTitle>
                   <CardDescription className="text-slate-500">
                     We're not actively hiring, but we're always interested in
-                    hearing from talented people. Drop us a line if you'd like to
-                    connect.
+                    hearing from talented people. Drop us a line if you'd like
+                    to connect.
                   </CardDescription>
                 </CardHeader>
               </Card>

@@ -33,7 +33,7 @@ export function ServicesGrid({ compact = false }: ServicesGridProps) {
               <AnimatedSection key={service.id} animation="fade-up">
                 <Card
                   className={cn(
-                    "h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-sky-100/50",
+                    "h-full transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-sky-100/50"
                   )}
                 >
                   <CardHeader>

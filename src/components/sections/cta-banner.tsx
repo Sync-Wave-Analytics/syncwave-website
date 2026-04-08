@@ -3,10 +3,7 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 export function CtaBanner() {
   return (
     <section className="py-20">
-      <AnimatedSection
-        animation="fade-up"
-        className="mx-auto max-w-4xl px-6"
-      >
+      <AnimatedSection animation="fade-up" className="mx-auto max-w-4xl px-6">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sky-50 via-cyan-50 to-teal-50 p-12 text-center md:p-16">
           {/* Background wave pattern decoration */}
           <svg

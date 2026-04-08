@@ -16,7 +16,7 @@ export function Hero() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Left column */}
           <AnimatedSection animation="fade-up">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-600">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-cyan-600 uppercase">
               AI-POWERED ANALYTICS
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-slate-800 md:text-5xl lg:text-6xl">

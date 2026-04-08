@@ -2,7 +2,13 @@ import { createFileRoute } from "@tanstack/react-router"
 import { Brain, Database, Shield, Users } from "lucide-react"
 import { usePageTitle } from "@/hooks/use-page-title"
 import { AnimatedSection } from "@/components/ui/animated-section"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { team } from "@/data/team"
 import { CtaBanner } from "@/components/sections/cta-banner"
 
@@ -44,7 +50,7 @@ function AboutPage() {
       <section className="bg-gradient-to-br from-amber-50/50 via-sky-50 to-cyan-50 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <AnimatedSection>
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-600">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-cyan-600 uppercase">
               Our Story
             </p>
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-slate-800 md:text-5xl">
@@ -54,11 +60,11 @@ function AboutPage() {
               </span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-500">
-              Sync Wave Analytics was born from a decade of building data systems
-              at companies like Spotify, JPMorgan Chase, and ESPN — where
-              messy, complex data had to become something people could actually
-              act on. We keep our team small by design so every project gets
-              senior-level attention from start to finish.
+              Sync Wave Analytics was born from a decade of building data
+              systems at companies like Spotify, JPMorgan Chase, and ESPN —
+              where messy, complex data had to become something people could
+              actually act on. We keep our team small by design so every project
+              gets senior-level attention from start to finish.
             </p>
           </AnimatedSection>
         </div>

@@ -20,7 +20,14 @@ export const services: Array<Service> = [
       "Custom ML models, NLP pipelines, and intelligent automation tailored to your data.",
     fullDescription:
       "We design and deploy production-grade machine learning systems — from predictive models and recommendation engines to NLP pipelines and computer vision solutions. Every model is built for real-world performance, not just notebook accuracy.",
-    technologies: ["Python", "PyTorch", "scikit-learn", "Hugging Face", "LangChain", "OpenAI API"],
+    technologies: [
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Hugging Face",
+      "LangChain",
+      "OpenAI API",
+    ],
     useCases: [
       "Demand forecasting and predictive analytics",
       "Natural language processing and text classification",
@@ -36,7 +43,14 @@ export const services: Array<Service> = [
       "Reliable, scalable data pipelines that move and transform your data end-to-end.",
     fullDescription:
       "We build modern data stacks from ingestion to warehouse. Our pipelines are orchestrated, tested, and monitored — designed to handle scale without surprises. Whether you need batch ETL, streaming, or reverse ETL, we deliver infrastructure you can trust.",
-    technologies: ["dbt", "Airbyte", "Prefect", "Apache Spark", "BigQuery", "Snowflake"],
+    technologies: [
+      "dbt",
+      "Airbyte",
+      "Prefect",
+      "Apache Spark",
+      "BigQuery",
+      "Snowflake",
+    ],
     useCases: [
       "Data warehouse design and optimization",
       "ETL/ELT pipeline development",

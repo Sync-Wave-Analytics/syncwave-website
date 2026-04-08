@@ -20,7 +20,7 @@ export function AnimatedSection({
       className={cn(
         animation === "fade-up" ? "animate-fade-up" : "animate-fade-in",
         isVisible && "visible",
-        className,
+        className
       )}
     >
       {children}
