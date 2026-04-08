@@ -449,8 +449,9 @@ function BrandPage() {
               Templates & Downloads
             </h2>
             <p className="mb-12 max-w-2xl text-slate-500">
-              Social media templates and marketing collateral. Open the HTML
-              files in a browser and screenshot at the target dimensions.
+              Social media images and marketing collateral. Image templates are
+              available as ready-to-use PNGs. HTML templates can be customized
+              before use.
             </p>
           </AnimatedSection>
 
@@ -458,53 +459,63 @@ function BrandPage() {
             {[
               {
                 name: "LinkedIn Profile",
-                file: "social/linkedin-profile.html",
+                file: "social/linkedin-profile",
                 size: "400 x 400",
+                png: true,
               },
               {
                 name: "LinkedIn Banner",
-                file: "social/linkedin-banner.html",
+                file: "social/linkedin-banner",
                 size: "1584 x 396",
+                png: true,
               },
               {
                 name: "Twitter Profile",
-                file: "social/twitter-profile.html",
+                file: "social/twitter-profile",
                 size: "400 x 400",
+                png: true,
               },
               {
                 name: "Twitter Header",
-                file: "social/twitter-header.html",
+                file: "social/twitter-header",
                 size: "1500 x 500",
+                png: true,
               },
               {
                 name: "GitHub Avatar",
-                file: "social/github-avatar.html",
+                file: "social/github-avatar",
                 size: "500 x 500",
-              },
-              {
-                name: "Business Card",
-                file: "collateral/business-card.html",
-                size: "700 x 400",
-              },
-              {
-                name: "Email Signature",
-                file: "collateral/email-signature.html",
-                size: "HTML",
-              },
-              {
-                name: "Presentation",
-                file: "collateral/presentation-template.html",
-                size: "1920 x 1080",
-              },
-              {
-                name: "Letterhead",
-                file: "collateral/letterhead.html",
-                size: '8.5" x 11"',
+                png: true,
               },
               {
                 name: "OG Image",
-                file: "collateral/og-image.html",
+                file: "collateral/og-image",
                 size: "1200 x 630",
+                png: true,
+              },
+              {
+                name: "Business Card",
+                file: "collateral/business-card",
+                size: "700 x 400",
+                png: false,
+              },
+              {
+                name: "Email Signature",
+                file: "collateral/email-signature",
+                size: "HTML",
+                png: false,
+              },
+              {
+                name: "Presentation",
+                file: "collateral/presentation-template",
+                size: "1920 x 1080",
+                png: false,
+              },
+              {
+                name: "Letterhead",
+                file: "collateral/letterhead",
+                size: '8.5" x 11"',
+                png: false,
               },
             ].map((item) => (
               <AnimatedSection key={item.file}>
@@ -516,14 +527,26 @@ function BrandPage() {
                       </p>
                       <p className="text-sm text-slate-500">{item.size}</p>
                     </div>
-                    <a
-                      href={`/brand/${item.file}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-lg bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700 hover:bg-sky-100"
-                    >
-                      Open
-                    </a>
+                    <div className="flex gap-2">
+                      {item.png ? (
+                        <a
+                          href={`/brand/${item.file}.png`}
+                          download
+                          className="inline-flex items-center gap-1.5 rounded-lg bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700 hover:bg-sky-100"
+                        >
+                          <Download className="size-3.5" />
+                          PNG
+                        </a>
+                      ) : null}
+                      <a
+                        href={`/brand/${item.file}.html`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-lg bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700 hover:bg-sky-100"
+                      >
+                        HTML
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               </AnimatedSection>

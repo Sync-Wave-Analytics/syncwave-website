@@ -12,7 +12,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "generate-pngs": "bun run scripts/generate-pngs.ts"
+    "generate-pngs": "bun run scripts/generate-pngs.ts",
+    "generate-template-pngs": "bun run scripts/generate-template-pngs.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
@@ -43,6 +44,7 @@
     "husky": "^9.1.7",
     "jsdom": "^27.0.0",
     "lint-staged": "^16.4.0",
+    "playwright": "^1.59.1",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "sharp": "^0.34.5",
